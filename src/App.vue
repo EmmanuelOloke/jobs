@@ -5,9 +5,9 @@
     <router-link :to="{ name: 'jobs' }">Jobs</router-link>
   </nav>
 
-  <button @click="redirect">Redirect</button>
-  <button @click="back">Go Back</button>
-  <button @click="forward">Go Forward</button>
+  <button class="manual-nav" @click="redirect">Redirect</button>
+  <button class="manual-nav" @click="back">Go Back</button>
+  <button class="manual-nav" @click="forward">Go Forward</button>
 
   <router-view/>
 </template>
@@ -62,4 +62,9 @@ button {
   border: none;
   border-radius: 4px;
 }
+
+.manual-nav {
+  cursor: pointer;
+}
+
 </style>
